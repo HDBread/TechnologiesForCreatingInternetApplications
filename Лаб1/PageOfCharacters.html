@@ -3,24 +3,42 @@
 
 <head>
 	<title>Characters</title>
+	<style>
+		.toMain
+		{
+			position: fixed;
+			right: 10px;
+			top: 5px;
+		}
+		a 
+		{
+   			text-decoration: none; /* Убирает подчеркивание для ссылок */
+   		} 
+  		a:hover 
+  		{ 
+    		text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    		color: red; /* Ссылка красного цвета */
+  		}
+	</style>
 </head>
 
-<body background="BossBackground.jpg">
+<body background="BossBackground.jpg" link="snow" alink="#FF000" vlink="red">
 	<font color = "snow">
+	<div class = "toMain"><a href="MainFormFirstLab.html"> На главную  </a></div>
+	<h1><center><i>Список персонажей игры Cuphead </i> </center></h1>
 
-	<h1 align="center"> Список персонажей игры Cuphead </font></h1>
 	<table border = 1 align="center">	
 		<tr>
-			<th><font color = snow>Имя</th>
-			<th><font color = snow>Краткое описание</th>
+			<th>Имя</th>
+			<th>Краткое описание</th>
 		</tr>
 		<tr>
-			<td align="center"> <img = src="CharactersIcons/CupheadIcon.png" align="middle"><br><font color = "snow">Cuphead </td>
-			<td align="center"><font color = "snow">Играбельный персонаж и главный герой игры</td>
+			<td align="center"> <img = src="CharactersIcons/CupheadIcon.png" align="middle"><br>Cuphead </td>
+			<td align="center">Играбельный персонаж и главный герой игры</td>
 		</tr>
 		<tr>
-			<td align="center"> <img = src="CharactersIcons/MugmanIcon.png" align="middle"><br><font color = snow>Mugman</td>
-			<td align="center"><font color = "snow">Играбельный персонаж и дейтегонист игры</td>
+			<td align="center"> <img = src="CharactersIcons/MugmanIcon.png" align="middle"><br>Mugman</td>
+			<td align="center">Играбельный персонаж и дейтерагонист игры</td>
 		</tr>
 	
 		

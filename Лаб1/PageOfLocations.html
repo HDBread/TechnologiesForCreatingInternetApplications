@@ -2,11 +2,69 @@
 <html>
 
 <head>
-	<title>Loctions</title>
+	<title>Locations</title>
+	<style>
+		.toMain
+		{
+			position: fixed;
+			right: 10px;
+			top: 5px;
+		}
+		a 
+		{
+   			text-decoration: none; /* Убирает подчеркивание для ссылок */
+   		} 
+  		a:hover 
+  		{ 
+    		text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    		color: red; /* Ссылка красного цвета */
+  		}
+	</style>
 </head>
 
-<body>
+<body background="../image/LocationsBackground.jpg" link="snow" alink="#FF000" vlink="red">
+	<font color="snow">
+	<div class = "toMain"><a href="MainFormFirstLab.html"> На главную </a></div>
+	<h1 align="center"> <i> Основные локации игры Cuphead </i></h1>
 
+	<map name = IsleOne>
+		<area shape="rect" coords="0,0,320,180" href="../Locations/InkwellIsleOne.html" target="_blank" alt = "Зона первого мира">
+	</map>
+	<map name = IsleTwo>
+		<area shape="rect" coords="0,0,320,180" href="../Locations/InkwellIsleTwo.html" target="_blank" alt = "Зона второго мира">
+	</map>
+	<map name = IsleThree>
+		<area shape="rect" coords="0,0,320,180" href="../Locations/InkwellIsleThree.html" target="_blank" alt = "Зона третьего мира">
+	</map>
+	<map name = IsleHell>
+		<area shape="rect" coords="0,0,320,180" href="../Locations/InkwellHell.html" target="_blank" alt = "Зона четвертого мира">
+	</map>
+
+	<table align="center">
+		<tr>
+			<td> 
+				<img src="LocationsIcons\MapOne.png" usemap = #IsleOne>
+			 	<br> <p align="center"> Inkwell Isle One </p>
+			</td>
+
+			 <td>
+			 	<img src="LocationsIcons\MapTwo.png" usemap = #IsleTwo>
+			 	<br> <p align="center"> Inkwell Isle Two </p>
+			 </td>			 
+		</tr>
+		<tr>
+			<td>
+			 	<img src="LocationsIcons\MapThree.png" usemap = #IsleThree>
+			 	<br> <p align="center"> Inkwell Isle Three </p>
+			 </td>
+
+			 <td>
+			 	<img src="LocationsIcons\MapHell.png" usemap = #IsleHell>
+			 	<br> <p align="center">Inkwell Hell </p>
+			 </td>
+		</tr>
+	</table>
+</font>
 </body>
 
 </html>

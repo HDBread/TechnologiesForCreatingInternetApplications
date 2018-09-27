@@ -15,18 +15,30 @@
     			left: 125%;
     			transform: translateX(-50%);
 			}
+			a 
+			{
+   			 text-decoration: none; /* Убирает подчеркивание для ссылок */
+   			} 
+  			a:hover 
+  			{ 
+    			text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    		}
 		</style>
 	</head>
 
-	<body background="..\image\CupMain.jpg">
-		<p align = right ><font size = 6 color="black">Меню сайта</b> </font></p> <br>
+	<body background="..\image\CupMain.jpg" link="black" alink="#FF000" vlink="snow">
+		<h2 align="center"> <font color="snow">Хочешь в клан Petuch? 
+			<a href="mailto:GuildMasta@petuch.com?subject=Анкета для вступления в клан Petuch">Напиши мне</a> </font></h2>
 		<p align=right>
 		<nav>
 			<ul >
 				<li> <a name = "Characters" href = "PageOfCharacters.html" target="_blank"> 
-					<font size="6" color="black">Персонажи </a>
+					<font size="5" >Персонажи </a>
 				<li> <a name="Locations" href = "PageOfLocations.html" target="_blank"> 
-					<font size="6" color="black"> Локации </a>
+					<font size="5" > Локации </a>
+				<li> <a name = "FileDownload" href = ../image/ggxrd.zip> <font size = 5 >Загрузка файла</font></a>
+				<li> <a name = "Scrol" href="Temp/ScrolTest.html"> <font size="5" > Прокрутка</font>
+				<li> <a href="C:\Program Files (x86)\MPC-HC\mpc-hc.exe"> Let's play</a>
 			</ul>
 		</nav>
 		</p>
