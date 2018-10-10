@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Задания приложения А</title>
+	<style>
+		.menu 
+ 		{
+ 			border-style: dashed; padding: 3px;
+ 		}
+ 		.bor
+ 		{
+ 			border-style: double; padding: 3px;
+ 		}
+ 		.droptarget 
+ 		{
+    		float: left; 
+   	 		width: 130px; 
+   	 		height: 130px;
+    		margin: 15px;
+    		padding: 10px;
+    		border: 1px solid #aaaaaa;
+		}
+
+ 	</style>
+ 	<script type="text/javascript" src="JavaFiles/Task.js"></script>
+ 	<script type="text/javascript">
+ 		function bgSwitch(type)
+ 		{
+ 			switch(type)
+ 			{
+ 				case 0: document.bgColor = "cyan"; break;
+ 				case 1: document.bgColor = "white"; break;
+ 			}
+ 		}
+ 	</script>
+
+</head>
+<body onLoad="DiffTime(task2)" >
+<center>
+	<h1>Индивидуальные задания из приложения<br>
+		Вариант №9</h1>
+	<h2>Задание 1</h1>
+	<form name = "task1" class = "menu">
+		Расчитать сумму квадратов элементов последовательности <br>
+		<input type="text" name="res" size="12">
+		<input type = "button" name="Calc" value="Расчитать" onClick = "sqrSum(task1);">
+	</form>
+	<h2>Задание 2</h2>
+	<form name = "task2" class = "menu">
+		Сколько часов и минут прошло с начала текущего месяца <br> 
+		<input type="text" name="desc" size="10">
+	</form>
+	<h2>Задание 3</h2>
+	<form name = "task3" class = "menu">
+		При наведении курсора на какой-либо элемент страницы фон документа меняется <br> 
+		<table class = bor>
+			<tr>
+				<td onMouseOver = "bgSwitch(0);" onMouseOut = "bgSwitch(1);" >
+					Навиди сюда мышку для смены фона документа
+				</td>
+			</tr>
+		</table>			
+	</form>
+
+	<h2>Задание 4. Перенос картинки</h2>	
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<img src="JavaFiles/Vo.png" ondrop="drop(event)" ondragover="allowDrop(event)" ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget">
+</div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+
+
+</center>	
+</body>
+</html>

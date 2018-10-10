@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Страница меню</title>
+<style type = "text/css">
+.item {background-color: rgb(170, 170,170)}
+.selected {background-color: white}
+.menu {border-style: dashed; padding: 3px}
+</style>
+<script src = "JavaFiles/script.js" type = "text/javascript"></script>
+</head>
+<body>
+<table id = "tt" class = "menu" >
+	<tr>
+		<td id = "item1_1" class="item" onMouseOver =	"item1_1.className = 'selected'" 
+		onMouseOut = "item1_1.className = 'item'">
+			Первый горизонтальный пункт меню
+		</td>
+		<td id = "item1_2" class="item" onMouseOver =	"item1_2.className = 'selected'" 
+		onMouseOut = "item1_2.className = 'item'">
+			Второй горизонтальный пункт меню
+		</td>
+		<td id = "item1_3" class="item" onMouseOver =	"item1_3.className = 'selected'" 
+		onMouseOut = "item1_3.className = 'item'">
+			Третий горизонтальный пункт меню
+		</td>
+		<td id = "item1_4" class="item" onMouseOver =	"item1_4.className = 'selected'" 
+		onMouseOut = "item1_4.className = 'item'">
+			Четвертый горизонтальный пункт меню
+		</td>
+</tr>	
+<!--Первый вертикальный пункт меню-->
+<tr id = "item2_1" class = "item" onclick = "showMes()" onMouseOver =
+"item2_1.className = 'selected'" onMouseOut = "item2_1.className = 'item'">
+<td colspan="4"><IMG src = "remove.png"> Первый вертикальный пункт меню </td>
+</tr>
+
+<!-- Второй вертикальный пункт меню -->
+<tr id = "item2_2" class = "item" onClick = "item2_click()" onMouseOver =
+"item2_2.className = 'selected'" onMouseOut = "item2_2.className = 'item'">
+<td colspan="4"><IMG src = "remove.png"> Второй вертикальный пункт меню </td>
+</tr>
+
+<!-- Третий вертикальный пункт меню -->
+<tr id = "item2_3" class = "item" onClick = "item3_click()" onMouseOver =
+"item2_3.className = 'selected'" onMouseOut = "item2_3.className = 'item'">
+<td colspan="4"><IMG src = "remove.png"> Третий вертикальный пункт меню </td>
+</tr>
+
+<!-- Четвертый вертикальный пункт меню -->
+<tr id = "item2_4" class = "item" onClick = "item4_click()" onMouseOver =
+"item2_4.className = 'selected'" onMouseOut = "item2_4.className = 'item'">
+<td colspan="4"><IMG src = "remove.png">Четвертый вертикальный пункт меню </td>
+</tr>
+
+</table>
+</body>
+</html> 

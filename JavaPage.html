@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaTest</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<script type="text/javascript" src="JavaFiles/script.js"></script>
+ 	<style>
+ 		.menu 
+ 		{
+ 			border-style: dashed; padding: 3px;
+ 		}
+ 	</style>
+</head>
+<body>
+
+	<form name="forma1" class = "menu">
+ Введите длинну <input type="text" name="t1" size="10"><br><br>
+ Введите ширину <input type="text" name="t2" size="10"><br><br>
+ <input type="button" name="button" value="Посчитай"
+ 									onclick="calcArea();" ><br><br>
+ Результат расчетов <input type="text" name="res" size="10">
+ </form><br>
+
+<form name = "t1" class = "menu">
+	<input type="button" value = "Lest's find" alt = "Close page" 
+	onclick="Sum(t1);">
+
+</form><br>
+
+<div class = "menu">
+<form name="forma2">
+ 	<textarea name="desc" cols=45 rows=4></textarea>
+</form>
+ <ul>
+ <li onMouseOver="showDesc(forma2,'Грыня обыкновенный.' + 
+  'Чаще всего лентяй и делает ничего');"
+ onMouseOut="delet(forma2);">Грыня Резник</li>
+
+ <li onMouseOver="showDesc(forma2,'Любитель ракет и сладких конфет' +
+' Топлейнер герой приключений. Любимчих всех вражеских лесников.');"
+ onMouseOut="delet(forma2);">Каюн Даниил</li>
+ <li onMouseOver="showDesc(forma2,'Глава кланна Петуч ' +
+'Любитель слабой роли. По дефолту выбирает самых казуальных и уебских персонажей.');"
+ onMouseOut="delet(forma2);">Petuch Роман</li>
+ </ul>
+</div>
+		
+</body>
+</html>

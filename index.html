@@ -12,10 +12,56 @@
 			width: 100%;
 			height: 783px;
 			background-repeat: no-repeat;
+		}
 	</style>
+	<script language="JavaScript">
+		function clock_form()
+		{
+		  day=new Date()
+		  h = day.getHours(); if(h < 10) {h = "0" + h}
+		  m = day.getMinutes(); if(m < 10) {m = "0" + m}
+		  s = day.getSeconds(); if(s < 10) {s = "0" + s}
+		  clock_f=h+":"+m+":"+s
+		  document.form.f_clock.value=clock_f 
+		  id=setTimeout("clock_form()",100)
+		}
+
+		function startTimer() 
+		{
+		    var timer = document.getElementById("timer");
+		    var time = timer.innerHTML;
+		    var arr = time.split(":");
+		    var h = arr[0];
+		    var m = arr[1];
+		    var s = arr[2];
+		    if (s == 59)
+		    	{
+		    		if (m == 59)
+		    			{
+		    				if (h == 0)
+		    					{
+		    						alert("Время вышло");
+		    						window.location.reload();
+		    						return;
+		    					}
+		    					h++;
+		    					m = 0;
+		    					if (h < 10) h = "0" + h;
+		    			}
+		    			m++;
+		    			if (m < 10) m = "0" + m;
+		    			s = 0;
+		    	}
+		    else s++;
+		    if (s < 10) s = "0" + s;
+		    document.getElementById("timer").innerHTML = h+":"+m+":"+s;
+		    setTimeout(startTimer, 1000);
+		}
+</script>
 </head>
 
-<body>
+<body onLoad="startTimer() & clock_form()">
+
 
 <div id="container">
 	<div id="header">
@@ -27,7 +73,11 @@
 			<li><a href="Лаб1/Temp/ScrolTest.html">Scroll</a></li>
 			</ul>
 		</div>
-		<div style="z-index: 1">
+		<center>
+			<form name=form metod="get" >
+			<input name=f_clock maxlength=8 size=8> </td>
+		</center>
+				<div style="z-index: 1">
 			<img class="imgwiki" src="image/Bar/CupWiki.png">
 			<img class="imgcupbar" src="image/Bar/CupheadRun1.png">
 			<img class="imgmugbar" src="image/Bar/MugmanRun.png">
@@ -36,15 +86,16 @@
 </div>
 
 <div class="BackImage">
-	
+	<center>
+	<p><span id="timer" style="color: green; font-size: 150%; font-weight: bold;">
+				00:00:00
+			</span></p>
+	</center>
 </div>
 
 <div id="footer">
 <p>Copyright © Москалев Роман "HDBread" ТУСУР 2018г.</p>
 </div> 
-
-
-
 
 </body>
 </html>

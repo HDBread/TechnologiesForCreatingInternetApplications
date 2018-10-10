@@ -1,0 +1,22 @@
+<html>
+<head>
+<title>Clock full</title>
+</head>
+<script language="JavaScript">
+function fulltime() {
+ var time=new Date();
+ document.clock.full.value=time.toLocaleString();
+setTimeout('fulltime()',500)
+}
+</script>
+<body bgcolor=ffffff text=ff0000>
+<center>
+<form name=clock>
+<input type=text size=17 name=full>
+</form>
+<script language="JavaScript">
+fulltime();
+</script>
+</center>
+</body>
+</html> 
