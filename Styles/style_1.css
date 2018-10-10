@@ -12,6 +12,12 @@ body
 	font-family: Verdana, Arial, Helvetica, sans-seri
 }
 
+h1
+{
+	color: snow ! important;
+	text-align: center;
+}
+
 #container
 {
 	width: 100%;
